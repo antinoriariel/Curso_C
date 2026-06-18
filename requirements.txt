@@ -1,0 +1,8 @@
+# Dependencias para construir el sitio del curso con MkDocs.
+# Instalación:  python -m pip install -r requirements.txt
+# Servir local: mkdocs serve
+# Construir:    mkdocs build
+
+mkdocs==1.6.1
+mkdocs-material==9.5.49
+pymdown-extensions==10.14

@@ -1,0 +1,23 @@
+# Sitio generado por MkDocs
+/site/
+
+# Artefactos de compilación de los ejemplos en C
+*.o
+*.obj
+*.exe
+*.out
+a.out
+*.gch
+*.so
+*.dylib
+*.dll
+
+# Entornos virtuales de Python
+.venv/
+venv/
+__pycache__/
+
+# Editores
+.vscode/
+.idea/
+*.swp

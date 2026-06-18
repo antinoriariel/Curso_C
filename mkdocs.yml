@@ -1,0 +1,184 @@
+site_name: Curso Completo de C — De Cero a Experto
+site_description: >-
+  Curso académico y 100% práctico del lenguaje C (C17/C23): desde los
+  fundamentos hasta kernels, compiladores, HPC, criptografía, machine learning,
+  robótica y sistemas distribuidos.
+site_author: Kernel
+site_url: https://example.org/curso-c/
+copyright: >-
+  Copyright &copy; 2026 Kernel — Material distribuido bajo licencia MIT.
+
+# ---------------------------------------------------------------------------
+# Tema
+# ---------------------------------------------------------------------------
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - navigation.tracking
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/language-c
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+# ---------------------------------------------------------------------------
+# Extras y repositorio
+# ---------------------------------------------------------------------------
+repo_name: Kernel/Curso_C
+repo_url: https://github.com/Kernel/Curso_C
+edit_uri: edit/main/docs/
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Kernel/Curso_C
+  generator: false
+  status:
+    new: Recién añadido
+    deprecated: Obsoleto
+
+# ---------------------------------------------------------------------------
+# Plugins
+# ---------------------------------------------------------------------------
+plugins:
+  - search:
+      lang: es
+  - tags
+
+# ---------------------------------------------------------------------------
+# Extensiones Markdown
+# ---------------------------------------------------------------------------
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_javascript:
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+# ---------------------------------------------------------------------------
+# Navegación
+# ---------------------------------------------------------------------------
+nav:
+  - Inicio: index.md
+  - Guía del curso:
+      - Presentación: index.md
+      - Cómo estudiar: guia/como-estudiar.md
+      - Entorno y herramientas: guia/entorno.md
+  - Fundamentos (1–10):
+      - 1. Introducción al Lenguaje C: capitulos/capitulo-01.md
+      - 2. Tipos, Variables y Operadores: capitulos/capitulo-02.md
+      - 3. Control de Flujo: capitulos/capitulo-03.md
+      - 4. Funciones y Ámbito: capitulos/capitulo-04.md
+      - 5. Arrays y Cadenas: capitulos/capitulo-05.md
+      - 6. Punteros: capitulos/capitulo-06.md
+      - 7. Gestión Dinámica de Memoria: capitulos/capitulo-07.md
+      - 8. Estructuras, Uniones y Enums: capitulos/capitulo-08.md
+      - 9. Entrada/Salida y Archivos: capitulos/capitulo-09.md
+      - 10. Preprocesador y Compilación: capitulos/capitulo-10.md
+  - Avanzado y Sistemas (11–20):
+      - 11. Estructuras de Datos: capitulos/capitulo-11.md
+      - 12. Concurrencia y Paralelismo: capitulos/capitulo-12.md
+      - 13. Redes con Sockets: capitulos/capitulo-13.md
+      - 14. Temas Avanzados y Bajo Nivel: capitulos/capitulo-14.md
+      - 15. Proyecto Final Integrador: capitulos/capitulo-15.md
+      - 16. Cómputo Numérico y Álgebra Lineal: capitulos/capitulo-16.md
+      - 17. Procesamiento de Señales y Multimedia: capitulos/capitulo-17.md
+      - 18. Criptografía y Seguridad: capitulos/capitulo-18.md
+      - 19. Compiladores e Intérpretes: capitulos/capitulo-19.md
+      - 20. Sistemas Embebidos: capitulos/capitulo-20.md
+  - Experto (21–30):
+      - 21. Computación de Alto Rendimiento: capitulos/capitulo-21.md
+      - 22. Desarrollo de Juegos: capitulos/capitulo-22.md
+      - 23. Kernel y Módulos Linux: capitulos/capitulo-23.md
+      - 24. WebAssembly y Emscripten: capitulos/capitulo-24.md
+      - 25. Análisis Estático y Verificación: capitulos/capitulo-25.md
+      - 26. Machine Learning e IA: capitulos/capitulo-26.md
+      - 27. Bases de Datos y Almacenamiento: capitulos/capitulo-27.md
+      - 28. Protocolos de Red Avanzados: capitulos/capitulo-28.md
+      - 29. Depuración y Perfilamiento: capitulos/capitulo-29.md
+      - 30. Desarrollo Seguro: capitulos/capitulo-30.md
+  - Maestría (31–40):
+      - 31. Máquinas Virtuales y JIT: capitulos/capitulo-31.md
+      - 32. Bases de Datos Embebidas: capitulos/capitulo-32.md
+      - 33. Procesamiento de Texto y Lenguajes: capitulos/capitulo-33.md
+      - 34. Sistemas Distribuidos y P2P: capitulos/capitulo-34.md
+      - 35. Microservicios y APIs: capitulos/capitulo-35.md
+      - 36. Herramientas CLI y TUI: capitulos/capitulo-36.md
+      - 37. Robótica y Sistemas de Control: capitulos/capitulo-37.md
+      - 38. Deep Learning desde Cero: capitulos/capitulo-38.md
+      - "39. TLPI: Sistemas Linux Avanzados": capitulos/capitulo-39.md
+      - 40. Proyectos de Síntesis y Portafolio: capitulos/capitulo-40.md
+  - Apéndices:
+      - A. Precedencia de Operadores: apendices/apendice-a.md
+      - B. Formatos printf/scanf: apendices/apendice-b.md
+      - C. Secuencias de Escape: apendices/apendice-c.md
+      - D. Diferencias C17 vs C23: apendices/apendice-d.md
+      - E. Lecturas Recomendadas: apendices/apendice-e.md
+      - F. Guía Rápida de GDB: apendices/apendice-f.md
+      - G. Cheatsheet de Makefile: apendices/apendice-g.md
