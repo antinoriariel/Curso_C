@@ -2,7 +2,12 @@
 # Instalación:  python -m pip install -r requirements.txt
 # Servir local: mkdocs serve
 # Construir:    mkdocs build
+#
+# Versiones fijadas a un conjunto verificado y mutuamente compatible.
+# Pygments se fija explícitamente: pymdown-extensions es sensible a la
+# versión de Pygments (una Pygments demasiado nueva rompe el resaltado).
 
 mkdocs==1.6.1
-mkdocs-material==9.5.49
-pymdown-extensions==10.14
+mkdocs-material==9.7.6
+pymdown-extensions==10.21.3
+pygments==2.18.0
